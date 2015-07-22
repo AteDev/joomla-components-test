@@ -12,7 +12,7 @@ class TestController extends JControllerLegacy {
    	function display($cachable = false, $urlparams = array())
 	{
 		$this->input->set('view', $this->input->getCmd('view', 'test'));
-		$this->input->set('layout', $this->input->getCmd('layout', 'edit'));
+		$this->input->set('layout', $this->input->getCmd('layout', 'default'));
 
 		parent::display($cachable, $urlparams);
 	}
